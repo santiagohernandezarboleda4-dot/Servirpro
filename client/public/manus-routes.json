@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "ServirPRO: Tu tranquilidad asegurada"
+    },
+    {
+      "path": "/seguros-vehiculo",
+      "title": "Servicios | ServirPRO"
+    },
+    {
+      "path": "/compra-cartera-vehiculos",
+      "title": "Servicios | ServirPRO"
+    }
+  ]
+}

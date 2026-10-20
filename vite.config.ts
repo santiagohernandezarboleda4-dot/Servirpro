@@ -168,7 +168,30 @@ function vitePluginPublicPlatformConfig(): Plugin {
   };
 }
 
-const plugins = [vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector()];
+function vitePluginServirproStaticRoutes(): Plugin {
+  const pages: Record<string, string> = {
+    "/seguros-vehiculo": path.resolve(PROJECT_ROOT, "client/public/seguros-vehiculo/index.html"),
+    "/compra-cartera-vehiculos": path.resolve(PROJECT_ROOT, "client/public/compra-cartera-vehiculos/index.html"),
+  };
+
+  return {
+    name: "servirpro-static-routes",
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if (req.method !== "GET" && req.method !== "HEAD") return next();
+        const pathname = (req.url ?? "/").split("?", 1)[0].replace(/\/$/, "") || "/";
+        const page = pages[pathname];
+        if (!page) return next();
+
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "text/html; charset=utf-8");
+        res.end(req.method === "HEAD" ? undefined : fs.readFileSync(page));
+      });
+    },
+  };
+}
+
+const plugins = [vitePluginServirproStaticRoutes(), vitePluginPublicPlatformConfig(), react(), tailwindcss(), jsxLocPlugin(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
   plugins,
