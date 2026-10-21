@@ -15,6 +15,7 @@
 ## Página de créditos vehiculares
 - [x] Agregar una página llamada “Créditos vehiculares” en `/creditos-vehiculares` con la misma estructura visual, paleta, encabezado, navegación y footer que las páginas existentes.
 - [x] Presentar información y una llamada a asesoría sobre créditos vehiculares, sin inventar tasas, condiciones financieras ni promesas de aprobación.
+- [x] Quitar el fondo del carro y el bloque que parece una alerta; reemplazarlo por una propuesta visual creativa, bonita y llamativa, propia de créditos vehiculares, que invite al cliente a solicitar el crédito.
 
 ## Actualización de marca y estilo solicitada
 - [x] Quitar el logo actual del sitio web y reemplazarlo por el logo adjunto de LeCreo en los espacios de marca visibles de las cuatro páginas.
