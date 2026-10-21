@@ -1,14 +1,328 @@
+/* Paleta nueva de marca: crema, terracota, taupe y carbón. */
 :root {
-  --sp-azul: #2b89c0;
-  --sp-azul-intenso: #2b89c6;
-  --sp-azul-medio: #2f8bc0;
-  --sp-azul-texto: #385d83;
-  --sp-azul-oscuro: #0b2d49;
-  --sp-azul-profundo: #0b2e4a;
-  --sp-azul-petroleo: #1e4760;
-  --sp-verde: #85c657;
-  --sp-verde-claro: #8cd556;
-  --sp-whatsapp: #25d366;
-  --sp-azul-pastel: #aed8f8;
-  --sp-gris: #e6e6e6;
+  --sp-cream: #f4eadb;
+  --sp-terracotta: #c2593c;
+  --sp-taupe: #8a8178;
+  --sp-charcoal: #262626;
+  --sp-white: #ffffff;
+  --sp-black: #000000;
+
+  /* Alias heredados del sitio original, ahora vinculados a la nueva paleta. */
+  --sp-azul: var(--sp-terracotta);
+  --sp-azul-intenso: var(--sp-terracotta);
+  --sp-azul-medio: var(--sp-taupe);
+  --sp-azul-texto: var(--sp-charcoal);
+  --sp-azul-oscuro: var(--sp-charcoal);
+  --sp-azul-profundo: var(--sp-charcoal);
+  --sp-azul-petroleo: var(--sp-charcoal);
+  --sp-verde: var(--sp-terracotta);
+  --sp-verde-claro: var(--sp-terracotta);
+  --sp-whatsapp: var(--sp-terracotta);
+  --sp-azul-pastel: var(--sp-cream);
+  --sp-gris: var(--sp-cream);
+
+  /* Tokens que usa el CSS compilado del sitio. */
+  --color-servir-blue: var(--sp-terracotta);
+  --color-servir-blue-dark: var(--sp-charcoal);
+  --color-servir-blue-banner: var(--sp-charcoal);
+  --color-servir-green: var(--sp-terracotta);
+  --color-servir-gray-text: var(--sp-taupe);
+  --color-servir-dark-text: var(--sp-charcoal);
+  --color-servir-gray-dark: var(--sp-taupe);
+
+  /* Neutrales y acentos Tailwind alineados a la paleta. */
+  --color-gray-50: var(--sp-cream);
+  --color-gray-100: var(--sp-cream);
+  --color-gray-200: rgba(138, 129, 120, 0.14);
+  --color-gray-300: rgba(138, 129, 120, 0.28);
+  --color-gray-400: var(--sp-taupe);
+  --color-gray-500: var(--sp-taupe);
+  --color-gray-600: var(--sp-taupe);
+  --color-gray-700: var(--sp-charcoal);
+  --color-gray-800: var(--sp-charcoal);
+  --color-gray-900: var(--sp-charcoal);
+  --color-blue-50: var(--sp-cream);
+  --color-blue-500: var(--sp-terracotta);
+  --color-blue-600: var(--sp-terracotta);
+  --color-blue-700: var(--sp-charcoal);
+  --color-green-500: var(--sp-terracotta);
+  --color-yellow-400: var(--sp-terracotta);
+  --color-white: var(--sp-white);
+  --color-black: var(--sp-black);
+}
+
+html,
+body {
+  color: var(--sp-charcoal);
+}
+
+/* Los bloques oscuros sustituyen los azules anteriores. */
+.bg-servir-blue,
+.bg-servir-blue-banner,
+[class~="bg-[#1e3a5f]"] {
+  background-color: var(--sp-charcoal) !important;
+}
+
+.bg-servir-blue,
+.bg-servir-blue-banner,
+[class~="bg-[#1e3a5f]"] {
+  color: var(--sp-white);
+}
+
+/* El terracota concentra los CTA y los acentos antes azules/verdes. */
+.bg-servir-green,
+[class~="bg-[#25D366]"],
+[class~="bg-[#2b89c6]"],
+.bg-green-500 {
+  background-color: var(--sp-terracotta) !important;
+}
+
+.bg-servir-green,
+.bg-servir-green.text-black,
+a.bg-servir-green,
+button.bg-servir-green,
+[class~="bg-[#25D366]"],
+[class~="bg-[#2b89c6]"] {
+  color: var(--sp-white) !important;
+}
+
+.text-servir-blue,
+.text-servir-green,
+.text-servir-blue-banner,
+[class~="text-[#2b89c6]"],
+.text-blue-500,
+.text-green-500 {
+  color: var(--sp-terracotta) !important;
+}
+
+.text-servir-blue-dark,
+.text-servir-dark-text,
+[class~="text-[#0B2D49]"],
+[class~="text-[#1e3a5f]"],
+.text-gray-700,
+.text-gray-800,
+.text-gray-900 {
+  color: var(--sp-charcoal) !important;
+}
+
+.text-servir-gray-text,
+.text-servir-gray,
+.text-servir-gray-dark,
+.gray-text,
+[class~="text-[#3b5881]"],
+.text-gray-500,
+.text-gray-600 {
+  color: var(--sp-taupe) !important;
+}
+
+[class~="text-[#aed8f8]"] {
+  color: var(--sp-cream) !important;
+}
+
+/* Fondos claros y estados hover en tonos cálidos. */
+[class~="bg-[#e6e6e6]"],
+[class~="bg-[#f3f3f3]"] {
+  background-color: var(--sp-cream) !important;
+}
+
+[class~="hover:bg-[#128C7E]"]:hover,
+[class~="hover:bg-servir-green/90"]:hover {
+  background-color: rgba(194, 89, 60, 0.9) !important;
+}
+
+[class~="to-[#2b89c6]"] {
+  --tw-gradient-to: var(--sp-terracotta) var(--tw-gradient-to-position) !important;
+}
+
+.border-servir-blue {
+  border-color: var(--sp-terracotta) !important;
+}
+
+.border-gray-100,
+.border-gray-200,
+.border-gray-300,
+[class~="border-[#d6d2d2]"] {
+  border-color: rgba(138, 129, 120, 0.32) !important;
+}
+
+.border-gray-800 {
+  border-color: var(--sp-charcoal) !important;
+}
+
+/* Fallbacks para estilos inline del menú y el bloque de contacto. */
+[style*="#d6d2d2"] {
+  border-color: rgba(138, 129, 120, 0.32) !important;
+}
+
+[style*="#DDDDDD"] {
+  background-color: var(--sp-cream) !important;
+}
+
+.carousel-btn {
+  color: var(--sp-charcoal) !important;
+  background-color: var(--sp-cream) !important;
+  border: 1px solid rgba(138, 129, 120, 0.32) !important;
+}
+
+.carousel-btn:hover {
+  color: var(--sp-charcoal) !important;
+  background-color: rgba(138, 129, 120, 0.16) !important;
+}
+
+.hero-overlay {
+  background: linear-gradient(110deg, rgba(38, 38, 38, 0.78), rgba(38, 38, 38, 0.34)) !important;
+}
+
+/* Plus Jakarta Sans para títulos, botones y cifras; el texto corrido conserva su fuente. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.subtitle,
+button,
+input[type="button"],
+input[type="submit"],
+[role="button"],
+.button-container,
+.button-text,
+.btn-text,
+a[class*="rounded-full"][class*="px-"],
+.number,
+.stat-number,
+.counter,
+[class*="text-4xl"],
+[class*="text-5xl"],
+[class*="text-6xl"],
+[class*="text-7xl"],
+[class*="text-8xl"],
+[class*="text-9xl"] {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+/* Los iconos conservan su dibujo, pero cambian el azul de marca por terracota. */
+img[src*="/reference-images/IC-"],
+img[src*="/reference-images/Icono"],
+img[src*="/reference-images/icon-"],
+img[src*="/reference-images/servicies"] {
+  filter: hue-rotate(170deg) saturate(0.9);
+}
+
+.credit-section-title {
+  margin: 0 auto;
+  color: var(--sp-charcoal);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: clamp(1.8rem, 4vw, 3.1rem);
+  font-weight: 800;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.credit-section-title__accent {
+  display: block;
+  color: var(--sp-terracotta);
+}
+
+.experience-panel-section {
+  background-color: var(--sp-cream) !important;
+  border-color: rgba(138, 129, 120, 0.28) !important;
+}
+
+.experience-panel-brand {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  width: min(100%, 1120px);
+  min-height: 12rem;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid rgba(138, 129, 120, 0.25);
+  border-radius: 1.25rem;
+  background: var(--sp-charcoal);
+  box-shadow: 0 18px 48px rgba(38, 38, 38, 0.12);
+}
+
+.experience-panel-copy {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 2.5rem);
+}
+
+.experience-panel-years {
+  color: var(--sp-terracotta);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: clamp(3.75rem, 8vw, 6.5rem);
+  font-weight: 800;
+  letter-spacing: -0.075em;
+  line-height: 0.85;
+  white-space: nowrap;
+}
+
+.experience-panel-heading {
+  margin: 0 0 0.45rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid var(--sp-terracotta);
+  color: var(--sp-white);
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-size: clamp(1.35rem, 2.5vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.experience-panel-caption {
+  margin: 0;
+  color: var(--sp-cream);
+  font-size: clamp(0.95rem, 1.7vw, 1.15rem);
+  line-height: 1.5;
+}
+
+.experience-panel-logo {
+  display: block;
+  width: clamp(8rem, 17vw, 13rem);
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .experience-panel-brand {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.15rem;
+    min-height: 17rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .experience-panel-logo {
+    order: -1;
+    width: min(10rem, 48vw);
+  }
+
+  .experience-panel-copy {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .experience-panel-years {
+    font-size: 3.75rem;
+  }
+
+  .experience-panel-heading {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+:focus-visible {
+  outline-color: var(--sp-terracotta);
+}
+
+::selection {
+  color: var(--sp-charcoal);
+  background: rgba(194, 89, 60, 0.22);
 }

@@ -16,5 +16,11 @@
 - [x] Agregar una página llamada “Créditos vehiculares” en `/creditos-vehiculares` con la misma estructura visual, paleta, encabezado, navegación y footer que las páginas existentes.
 - [x] Presentar información y una llamada a asesoría sobre créditos vehiculares, sin inventar tasas, condiciones financieras ni promesas de aprobación.
 
+## Actualización de marca y estilo solicitada
+- [x] Quitar el logo actual del sitio web y reemplazarlo por el logo adjunto de LeCreo en los espacios de marca visibles de las cuatro páginas.
+- [x] Cambiar la paleta del sitio usando `#f4eadb`, `#c2593c`, `#8a8178`, `#262626`, blanco y negro, combinándolos para que el resultado se vea armónico; recolorear los gráficos de marca donde el azul heredado siga siendo protagonista.
+- [x] Usar Plus Jakarta Sans para los títulos, botones y números.
+- [x] Corregir el título gráfico heredado que identificaba compra de cartera en Créditos vehiculares, manteniendo la estructura y el contenido nuevos.
+
 ## Despliegue en Vercel
 - [x] Al pulsar “Visitar”, mostrar la página renderizada en vez del código para el Home, seguros de vehículo y compra de cartera; el usuario confirmó que quedó bien.
