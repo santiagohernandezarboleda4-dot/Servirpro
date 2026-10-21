@@ -19,6 +19,7 @@
 
 ## Compra de cartera de vehículos
 - [x] Reemplazar en `/compra-cartera-vehiculos` la sección con fondo de auto y apariencia de alerta por una invitación visual similar a la de Créditos vehiculares, manteniendo la paleta LeCreo, usando un mensaje específico de compra de cartera y un CTA que conecte con la asesoría existente.
+- [x] Rediseñar de forma más innovadora y profesional la sección de beneficios en `/compra-cartera-vehiculos` y `/creditos-vehiculares`; darles identidad visual propia para cada servicio y evitar que se vean sencillas o repetidas.
 
 ## Actualización de marca y estilo solicitada
 - [x] Quitar el logo actual del sitio web y reemplazarlo por el logo adjunto de LeCreo en los espacios de marca visibles de las cuatro páginas.

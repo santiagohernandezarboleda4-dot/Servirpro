@@ -740,3 +740,95 @@ main > section.scroll-fade-hero .scroll-fade-layer {
   color: var(--sp-charcoal);
   background: rgba(194, 89, 60, 0.22);
 }
+/* Secciones editoriales de beneficios: lenguaje visual propio para cada producto financiero. */
+.finance-feature {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(4.75rem, 8vw, 8rem) clamp(1.15rem, 4vw, 4rem);
+}
+.finance-feature__shell { width: min(1220px, 100%); margin-inline: auto; }
+.finance-feature__eyebrow { display:flex; align-items:center; gap:.7rem; margin:0 0 1.3rem; color:var(--sp-terracotta); font:800 .7rem/1.4 'Plus Jakarta Sans',sans-serif; letter-spacing:.14em; }
+.finance-feature__eyebrow>span { width:1.8rem; height:2px; background:currentColor; }
+.finance-feature__intro h2 { max-width:15ch; margin:0; font:800 clamp(2.2rem,4.3vw,4.1rem)/1.06 'Plus Jakarta Sans',sans-serif; letter-spacing:-.055em; text-wrap:balance; }
+.finance-feature__description { max-width:38rem; margin:1.2rem 0 1.65rem; font:400 1rem/1.8 Montserrat,sans-serif; }
+.finance-feature__cta { min-height:3.25rem; display:inline-flex; align-items:center; justify-content:center; gap:.8rem; padding:.88rem 1.35rem; border:1px solid var(--sp-terracotta); border-radius:999px; background:var(--sp-terracotta); color:#fff; font:700 .9rem/1.2 'Plus Jakarta Sans',sans-serif; text-decoration:none; box-shadow:0 12px 28px rgba(194,89,60,.22); transition:transform 220ms ease,box-shadow 220ms ease,background-color 220ms ease; }
+.finance-feature__cta svg { width:1.1rem; height:1.1rem; transition:transform 220ms ease; }
+.finance-feature__cta:hover { transform:translateY(-2px); box-shadow:0 16px 32px rgba(194,89,60,.3); }
+.finance-feature__cta:hover svg { transform:translateX(3px); }
+.finance-feature__cta:focus-visible { outline:3px solid rgba(194,89,60,.4); outline-offset:4px; }
+.finance-feature__disclaimer { max-width:33rem; margin:.9rem 0 0; font:500 .73rem/1.6 Montserrat,sans-serif; }
+.finance-feature__journey { position:relative; overflow:hidden; }
+.finance-feature__journey-head,.finance-feature__journey-foot { display:flex; align-items:center; justify-content:space-between; gap:1rem; font:800 .63rem/1.4 'Plus Jakarta Sans',sans-serif; letter-spacing:.13em; }
+.finance-feature__items { position:relative; z-index:1; }
+.finance-feature__item { position:relative; display:grid; align-items:start; }
+.finance-feature__index { font:800 2.25rem/1 'Plus Jakarta Sans',sans-serif; letter-spacing:-.08em; }
+.finance-feature__item h3 { margin:0; font:750 1.02rem/1.4 'Plus Jakarta Sans',sans-serif; }
+.finance-feature__item p { margin:.38rem 0 0; font:400 .85rem/1.65 Montserrat,sans-serif; }
+
+/* Crédito vehicular: panel nocturno de orientación con numeración monumental y ritmo vertical. */
+.finance-feature--vehicle { color:#fff; background:radial-gradient(ellipse at 84% 45%,rgba(194,89,60,.2),transparent 35rem),var(--sp-charcoal); }
+.finance-feature--vehicle::before { content:''; position:absolute; z-index:-1; top:-12rem; right:-10rem; width:34rem; aspect-ratio:1; border:1px solid rgba(244,234,219,.12); border-radius:50%; box-shadow:0 0 0 3.2rem rgba(244,234,219,.025),0 0 0 6.4rem rgba(244,234,219,.02); }
+.finance-feature--vehicle .finance-feature__shell { display:grid; grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr); align-items:center; gap:clamp(3rem,7vw,7.5rem); }
+.finance-feature--vehicle .finance-feature__intro h2 { color:var(--sp-cream); }
+.finance-feature--vehicle .finance-feature__intro h2::first-line { color:#fff; }
+.finance-feature--vehicle .finance-feature__description { color:rgba(244,234,219,.76); }
+.finance-feature--vehicle .finance-feature__disclaimer { color:rgba(244,234,219,.58); }
+.finance-feature--vehicle .finance-feature__journey { padding:clamp(1.5rem,3vw,2.6rem); border:1px solid rgba(244,234,219,.28); border-radius:1.8rem; background:linear-gradient(145deg,#f4eadb 0%,#fffaf3 100%); color:var(--sp-charcoal); box-shadow:0 32px 80px rgba(0,0,0,.25); }
+.finance-feature--vehicle .finance-feature__journey-head { padding-bottom:1.15rem; border-bottom:1px solid rgba(38,38,38,.15); color:var(--sp-taupe); }
+.finance-feature--vehicle .finance-feature__journey-head span:last-child { color:var(--sp-terracotta); font-size:1.2rem; }
+.finance-feature--vehicle .finance-feature__items { display:grid; padding:.35rem 0; }
+.finance-feature--vehicle .finance-feature__item { grid-template-columns:4.5rem minmax(0,1fr); gap:1rem; padding:1.35rem 0; border-bottom:1px solid rgba(38,38,38,.12); }
+.finance-feature--vehicle .finance-feature__index { color:var(--sp-terracotta); font-size:2.5rem; }
+.finance-feature--vehicle .finance-feature__item h3 { color:var(--sp-charcoal); }
+.finance-feature--vehicle .finance-feature__item p { max-width:28rem; color:var(--sp-taupe); }
+.finance-feature--vehicle .finance-feature__journey-foot { padding-top:1rem; color:var(--sp-taupe); font-size:.55rem; }
+
+/* Compra de cartera: mesa editorial de revisión con tres fichas escalonadas, no promesas de ahorro. */
+.finance-feature--portfolio { color:var(--sp-charcoal); background:radial-gradient(ellipse at 90% 14%,rgba(194,89,60,.11),transparent 26rem),var(--sp-cream); }
+.finance-feature--portfolio::before { content:'REVISIÓN'; position:absolute; z-index:-1; right:-2rem; bottom:-2rem; color:rgba(38,38,38,.035); font:800 clamp(5rem,15vw,13rem)/1 'Plus Jakarta Sans',sans-serif; letter-spacing:-.1em; }
+.finance-feature--portfolio .finance-feature__shell { display:grid; grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr); align-items:center; gap:clamp(2.7rem,6vw,6.5rem); }
+.finance-feature--portfolio .finance-feature__intro h2 { color:var(--sp-charcoal); }
+.finance-feature--portfolio .finance-feature__description,.finance-feature--portfolio .finance-feature__disclaimer { color:var(--sp-taupe); }
+.finance-feature--portfolio .finance-feature__journey { padding:clamp(1.3rem,2.8vw,2.2rem); border:1px solid rgba(138,129,120,.25); border-radius:1.6rem; background:rgba(255,255,255,.76); box-shadow:0 28px 70px rgba(38,38,38,.09); }
+.finance-feature--portfolio .finance-feature__journey-head { padding-bottom:1rem; border-bottom:1px solid rgba(138,129,120,.2); color:var(--sp-taupe); }
+.finance-feature--portfolio .finance-feature__journey-head span:last-child { color:var(--sp-terracotta); font-size:1.15rem; }
+.finance-feature--portfolio .finance-feature__items { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; padding:1.2rem 0; }
+.finance-feature--portfolio .finance-feature__item { min-height:14rem; grid-template-rows:auto 1fr; gap:1.65rem; padding:1.1rem .95rem; border-radius:1rem; background:#f4eadb; transition:transform 220ms ease,box-shadow 220ms ease; }
+.finance-feature--portfolio .finance-feature__item:nth-child(2) { transform:translateY(1.15rem); background:#262626; color:#fff; }
+.finance-feature--portfolio .finance-feature__item:nth-child(3) { background:#c2593c; color:#fff; }
+.finance-feature--portfolio .finance-feature__item:hover { transform:translateY(-.35rem); box-shadow:0 18px 32px rgba(38,38,38,.12); }
+.finance-feature--portfolio .finance-feature__index { width:2.8rem; height:2.8rem; display:grid; place-items:center; border:1px solid rgba(194,89,60,.35); border-radius:50%; color:var(--sp-terracotta); font-size:.82rem; letter-spacing:0; }
+.finance-feature--portfolio .finance-feature__item:nth-child(2) .finance-feature__index,.finance-feature--portfolio .finance-feature__item:nth-child(3) .finance-feature__index { border-color:rgba(255,255,255,.45); color:#fff; }
+.finance-feature--portfolio .finance-feature__item h3 { font-size:.9rem; }
+.finance-feature--portfolio .finance-feature__item p { font-size:.75rem; }
+.finance-feature--portfolio .finance-feature__journey-foot { padding-top:.9rem; border-top:1px solid rgba(138,129,120,.2); color:var(--sp-taupe); font-size:.55rem; }
+
+@media (max-width:900px) {
+  .finance-feature--vehicle .finance-feature__shell,.finance-feature--portfolio .finance-feature__shell { grid-template-columns:minmax(0,1fr); gap:2.5rem; }
+  .finance-feature__intro h2 { max-width:19ch; }
+  .finance-feature--portfolio .finance-feature__item { min-height:13rem; }
+  .finance-feature--portfolio .finance-feature__item:nth-child(2) { transform:translateY(.65rem); }
+}
+@media (max-width:600px) {
+  .finance-feature { padding:4.1rem 1.05rem; }
+  .finance-feature__intro h2 { font-size:clamp(2.05rem,10vw,2.8rem); }
+  .finance-feature__description { margin-top:.95rem; font-size:.92rem; }
+  .finance-feature__cta { width:100%; }
+  .finance-feature--vehicle .finance-feature__journey,.finance-feature--portfolio .finance-feature__journey { padding:1.1rem; border-radius:1.25rem; }
+  .finance-feature--vehicle .finance-feature__item { grid-template-columns:3.15rem minmax(0,1fr); gap:.8rem; padding:1.1rem 0; }
+  .finance-feature--vehicle .finance-feature__index { font-size:1.85rem; }
+  .finance-feature--vehicle .finance-feature__item h3 { font-size:.9rem; }
+  .finance-feature--vehicle .finance-feature__item p { font-size:.76rem; }
+  .finance-feature__journey-foot { font-size:.48rem; letter-spacing:.08em; }
+  .finance-feature--portfolio .finance-feature__items { grid-template-columns:minmax(0,1fr); gap:.65rem; }
+  .finance-feature--portfolio .finance-feature__item,.finance-feature--portfolio .finance-feature__item:nth-child(2) { min-height:0; grid-template-columns:2.5rem minmax(0,1fr); grid-template-rows:auto; align-items:start; gap:.85rem; padding:.9rem; transform:none; }
+  .finance-feature--portfolio .finance-feature__item:hover { transform:translateX(.15rem); }
+  .finance-feature--portfolio .finance-feature__index { width:2.4rem; height:2.4rem; }
+  .finance-feature--portfolio .finance-feature__item h3 { font-size:.85rem; }
+  .finance-feature--portfolio .finance-feature__item p { margin-top:.25rem; }
+  .finance-feature--portfolio .finance-feature__journey-foot span:last-child { text-align:right; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .finance-feature__cta,.finance-feature__cta svg,.finance-feature--portfolio .finance-feature__item { transition:none; }
+}
