@@ -17,6 +17,9 @@
 - [x] Presentar información y una llamada a asesoría sobre créditos vehiculares, sin inventar tasas, condiciones financieras ni promesas de aprobación.
 - [x] Quitar el fondo del carro y el bloque que parece una alerta; reemplazarlo por una propuesta visual creativa, bonita y llamativa, propia de créditos vehiculares, que invite al cliente a solicitar el crédito.
 
+## Compra de cartera de vehículos
+- [x] Reemplazar en `/compra-cartera-vehiculos` la sección con fondo de auto y apariencia de alerta por una invitación visual similar a la de Créditos vehiculares, manteniendo la paleta LeCreo, usando un mensaje específico de compra de cartera y un CTA que conecte con la asesoría existente.
+
 ## Actualización de marca y estilo solicitada
 - [x] Quitar el logo actual del sitio web y reemplazarlo por el logo adjunto de LeCreo en los espacios de marca visibles de las cuatro páginas.
 - [x] Cambiar la paleta del sitio usando `#f4eadb`, `#c2593c`, `#8a8178`, `#262626`, blanco y negro, combinándolos para que el resultado se vea armónico; recolorear los gráficos de marca donde el azul heredado siga siendo protagonista.
