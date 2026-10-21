@@ -16,3 +16,6 @@
 - [x] Usar los mismos textos, imágenes, iconos, colores y demás recursos visuales disponibles en las páginas de referencia.
 - [x] Organizar los estilos para permitir cambios posteriores de color sin alterar la composición de las páginas.
 - [x] Agregar únicamente lo indispensable para que funcionen estas tres páginas; no incorporar rutas o herramientas innecesarias.
+
+## Despliegue correcto en Vercel
+- [ ] Al pulsar “Visitar”, mostrar la página renderizada en vez del código para el inicio, seguros de vehículo y compra de cartera de vehículos.
