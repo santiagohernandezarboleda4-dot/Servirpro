@@ -5,12 +5,16 @@
       "title": "ServirPRO: Tu tranquilidad asegurada"
     },
     {
-      "path": "/seguros-vehiculo",
-      "title": "Servicios | ServirPRO"
+      "path": "/compra-cartera-vehiculos",
+      "title": "Compra de cartera de vehículos | ServirPRO"
     },
     {
-      "path": "/compra-cartera-vehiculos",
-      "title": "Servicios | ServirPRO"
+      "path": "/seguros-vehiculo",
+      "title": "Seguros para autos y motos | ServirPRO"
+    },
+    {
+      "path": "/creditos-vehiculares",
+      "title": "Créditos vehiculares | ServirPRO"
     }
   ]
 }

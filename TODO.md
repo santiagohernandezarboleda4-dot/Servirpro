@@ -1,21 +1,20 @@
 # TODO
 
-## Inicio replicado
-- [x] Reproducir la página de inicio de servirpro.co como una página distinta de las dos páginas de producto, conservando fielmente sus textos, imágenes, colores, contenido, estructura y comportamiento visible.
+## Páginas originales conservadas
+- [x] Reproducir la página de inicio de servirpro.co como una página distinta de las páginas de producto, conservando su diseño y recursos originales.
+- [x] Reproducir https://www.servirpro.co/seguros-vehiculo conservando sus textos, imágenes, colores, contenido, estructura y comportamiento visible.
+- [x] Reproducir https://www.servirpro.co/compra-cartera-vehiculos conservando sus textos, imágenes, colores, contenido, estructura y comportamiento visible.
+- [x] Mantener las páginas responsive y conservar los elementos interactivos visibles de las originales, incluidos formularios, botones, menús y secciones desplegables.
+- [x] Usar los recursos visuales originales —textos, imágenes e iconos— y organizar los estilos para facilitar cambios posteriores de color.
+- [x] Agregar únicamente lo indispensable para que funcionen las páginas solicitadas; no incorporar rutas ni herramientas innecesarias.
 
-## Seguros de vehículo replicado
-- [x] Reproducir https://www.servirpro.co/seguros-vehiculo conservando fielmente sus textos, imágenes, colores, contenido, estructura y comportamiento visible.
+## Alcance y navegación
+- [x] Dejar accesibles únicamente estas páginas: Home (`/`), Compra de cartera (`/compra-cartera-vehiculos`), Seguros para autos (`/seguros-vehiculo`) y Créditos vehiculares (`/creditos-vehiculares`). El manifiesto declara solo estas cuatro rutas.
+- [x] Mantener la navegación y las tarjetas de servicios entre esas cuatro páginas; quitar enlaces del catálogo a otros servicios y conservar funcionales los enlaces externos legales, de contacto, redes sociales y ubicación.
 
-## Compra de cartera de vehículos replicada
-- [x] Reproducir https://www.servirpro.co/compra-cartera-vehiculos conservando fielmente sus textos, imágenes, colores, contenido, estructura y comportamiento visible.
+## Página de créditos vehiculares
+- [x] Agregar una página llamada “Créditos vehiculares” en `/creditos-vehiculares` con la misma estructura visual, paleta, encabezado, navegación y footer que las páginas existentes.
+- [x] Presentar información y una llamada a asesoría sobre créditos vehiculares, sin inventar tasas, condiciones financieras ni promesas de aprobación.
 
-## Navegación e interacción de las tres páginas
-- [x] Asegurar navegación funcional entre las tres páginas mediante los enlaces presentes en los diseños originales.
-- [x] Reproducir los elementos interactivos visibles de las páginas originales, incluidos formularios, botones, menús y secciones desplegables que existan.
-- [x] Mantener un diseño responsive equivalente al original en escritorio y dispositivos móviles.
-- [x] Usar los mismos textos, imágenes, iconos, colores y demás recursos visuales disponibles en las páginas de referencia.
-- [x] Organizar los estilos para permitir cambios posteriores de color sin alterar la composición de las páginas.
-- [x] Agregar únicamente lo indispensable para que funcionen estas tres páginas; no incorporar rutas o herramientas innecesarias.
-
-## Despliegue correcto en Vercel
-- [ ] Al pulsar “Visitar”, mostrar la página renderizada en vez del código para el inicio, seguros de vehículo y compra de cartera de vehículos.
+## Despliegue en Vercel
+- [x] Al pulsar “Visitar”, mostrar la página renderizada en vez del código para el Home, seguros de vehículo y compra de cartera; el usuario confirmó que quedó bien.

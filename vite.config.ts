@@ -172,6 +172,7 @@ function vitePluginServirproStaticRoutes(): Plugin {
   const pages: Record<string, string> = {
     "/seguros-vehiculo": path.resolve(PROJECT_ROOT, "client/public/seguros-vehiculo/index.html"),
     "/compra-cartera-vehiculos": path.resolve(PROJECT_ROOT, "client/public/compra-cartera-vehiculos/index.html"),
+    "/creditos-vehiculares": path.resolve(PROJECT_ROOT, "client/public/creditos-vehiculares/index.html"),
   };
 
   return {
