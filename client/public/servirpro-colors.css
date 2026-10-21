@@ -318,6 +318,86 @@ img[src*="/reference-images/servicies"] {
   }
 }
 
+/* Los bloques oscuros se funden con el fondo crema al entrar y salir de vista. */
+main > section.bg-servir-blue:not(.bg-cover) {
+  background-color: var(--sp-charcoal) !important;
+  background-image:
+    linear-gradient(to bottom, var(--sp-cream), rgba(244, 234, 219, 0)),
+    linear-gradient(to top, var(--sp-cream), rgba(244, 234, 219, 0));
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 64px, 100% 64px;
+  transition: background-color 550ms ease, color 550ms ease;
+}
+
+/* Al salir de la franja de compra, el carbón se funde suavemente con el crema. */
+main > section.bg-servir-blue.bg-cover {
+  background-color: var(--sp-charcoal) !important;
+  background-image: linear-gradient(
+    to top,
+    var(--sp-cream),
+    rgba(244, 234, 219, 0)
+  ) !important;
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: 100% 64px !important;
+  transition: background-color 550ms ease, color 550ms ease;
+}
+
+/* Los heroes fotográficos se disuelven hacia el tono de fondo de su siguiente sección. */
+main > section.scroll-fade-hero.scroll-fade-to-cream {
+  background-color: var(--sp-cream) !important;
+}
+
+main > section.scroll-fade-hero.scroll-fade-to-charcoal {
+  background-color: var(--sp-charcoal) !important;
+}
+
+main > section.scroll-fade-hero .scroll-fade-layer {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 calc(100% - 72px),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 calc(100% - 72px),
+    transparent 100%
+  );
+}
+
+@media (max-width: 767px) {
+  main > section.bg-servir-blue.bg-cover {
+    background-size: 100% 36px !important;
+  }
+
+  main > section.scroll-fade-hero .scroll-fade-layer {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 calc(100% - 36px),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      #000 0%,
+      #000 calc(100% - 36px),
+      transparent 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main > section.bg-servir-blue:not(.bg-cover) {
+    transition: none;
+  }
+  main > section.bg-servir-blue.bg-cover {
+    transition: none;
+  }
+}
+
 :focus-visible {
   outline-color: var(--sp-terracotta);
 }
