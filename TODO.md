@@ -14,6 +14,7 @@
 
 ## Página de créditos vehiculares
 - [x] Agregar una página llamada “Créditos vehiculares” en `/creditos-vehiculares` con la misma estructura visual, paleta, encabezado, navegación y footer que las páginas existentes.
+- [x] En la parte de `/creditos-vehiculares` donde aparece la foto, cambiar solo el texto superpuesto y conservar la foto y el resto de la página. Usar el título “Tu próximo carro, con el crédito que te conviene”; subtítulo “Financia tu carro nuevo o usado con Lecreo”; descripción “Comparamos opciones con bancos aliados para ayudarte a elegir una financiación acorde a tu perfil y presupuesto.”; botón “Quiero cotizar mi crédito por WhatsApp”; beneficios “Asesoría sin costo”, “Opciones de financiación con bancos aliados” y “Acompañamiento hasta el desembolso”; línea “Bancos aliados: Sufi · Banco de Occidente · Banco de Bogotá · Finanfina”; y nota “Sujeto a estudio y aprobación de la entidad financiera.”
 - [x] Presentar información y una llamada a asesoría sobre créditos vehiculares, sin inventar tasas, condiciones financieras ni promesas de aprobación.
 
 ## Actualización de marca y estilo solicitada
