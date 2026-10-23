@@ -407,6 +407,48 @@ main > section.scroll-fade-hero .scroll-fade-layer {
   outline-color: var(--sp-terracotta);
 }
 
+/* Navegación más compacta sin ocultar enlaces ni cambiar su funcionamiento. */
+header.bg-white.shadow-md.sticky.top-0.z-50 .h-20 {
+  height: 4rem !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 img[alt="LeCreo"].h-12 {
+  height: 2.25rem !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 img[alt="LeCreo"].h-10 {
+  height: 2rem !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 nav a.description,
+header.bg-white.shadow-md.sticky.top-0.z-50 nav button.description {
+  padding: 0.35rem 0.55rem !important;
+  font-size: 0.8125rem !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 nav .dropdown-menu a {
+  padding: 0.4rem 0.65rem !important;
+  font-size: 0.8125rem !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 .fixed.inset-0 > .absolute.inset-y-0.left-0.w-80 {
+  width: 18rem !important;
+  max-width: 82% !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 .fixed.inset-0 a.block,
+header.bg-white.shadow-md.sticky.top-0.z-50 .fixed.inset-0 button.w-full {
+  padding-top: 0.45rem !important;
+  padding-bottom: 0.45rem !important;
+  font-size: 0.875rem !important;
+}
+
+header.bg-white.shadow-md.sticky.top-0.z-50 .fixed.inset-0 a.block.px-3.py-1 {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+  font-size: 0.8rem !important;
+}
+
 ::selection {
   color: var(--sp-charcoal);
   background: rgba(194, 89, 60, 0.22);

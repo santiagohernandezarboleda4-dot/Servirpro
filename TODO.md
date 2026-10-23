@@ -31,6 +31,7 @@
 
 ## Transición de color al hacer scroll
 - [x] Hacer menos brusco y más armónico el cambio de color que ocurre al hacer scroll, manteniendo los colores que la usuaria indicó; suavizar la salida de los heroes y los bloques oscuros en escritorio y móvil.
+- [x] Compactar la navegación en las cuatro páginas para que ocupe menos espacio y reducir el logo del encabezado en escritorio y móvil, conservando todos los enlaces y la funcionalidad del menú.
 
 ## Despliegue en Vercel
 - [x] Al pulsar “Visitar”, mostrar la página renderizada en vez del código para el Home, seguros de vehículo y compra de cartera; el usuario confirmó que quedó bien.
