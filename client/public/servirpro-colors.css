@@ -69,6 +69,11 @@ body {
   color: var(--sp-white);
 }
 
+.bg-servir-blue-banner.credit-doubts-panel {
+  background-color: var(--sp-cream) !important;
+  color: var(--sp-charcoal) !important;
+}
+
 /* El terracota concentra los CTA y los acentos antes azules/verdes. */
 .bg-servir-green,
 [class~="bg-[#25D366]"],
